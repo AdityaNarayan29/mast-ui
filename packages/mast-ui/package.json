@@ -10,12 +10,12 @@
     "build": "tsup index.ts --format esm,cjs --dts"
   },
   "devDependencies": {
-    "tsup": "^7.0.0",
+    "tsup": "^8.4.0",
     "typescript": "^5.0.0"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "dependencies": {
     "@types/react": "^19.1.3",
