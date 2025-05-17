@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { type FC, type ReactNode } from 'react';
 
 interface ButtonProps {
-  children: React.ReactNode;
+  children: ReactNode;
   onClick?: () => void;
 }
 
-export const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
+export const Button: FC<ButtonProps> = ({ children, onClick }) => {
   return (
     <button
       onClick={onClick}
