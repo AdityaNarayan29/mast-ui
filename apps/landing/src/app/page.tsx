@@ -1,37 +1,55 @@
 'use client';
+
 import { Button } from "mastui";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
+    <div className="min-h-screen flex flex-col items-center justify-between px-6 sm:px-20 py-10 bg-gradient-to-br from-[#fdfbfb] to-[#ebedee] dark:from-[#1a1a1a] dark:to-[#0d0d0d]">
+      {/* Header */}
+      <header className="w-full flex items-center justify-between max-w-7xl">
+        <div className="flex items-center gap-2">
+          <Image
+            src="/logo.png"
+            alt="Mast UI Logo"
+            width={60}
+            height={60}
+          />
+          <h1 className="text-xl md:text-2xl font-bold tracking-tight">Mast UI</h1>
+        </div>
+        <div className="flex gap-2">
+          <Button onClick={() => alert('Try the components!')}>
+            Get Started
+          </Button>
+          <Button onClick={() => alert('Go to Docs')}>
+            Docs
+          </Button>
+        </div>
+      </header>
 
-        <h1>Welcome to Mast UI</h1>
-        <p>Showcasing a modern UI component library.</p>
-        <Button onClick={() => alert('Button Clicked!')}>Click Me</Button>
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
+      {/* Hero Section */}
+      <main className="flex flex-col items-center text-center gap-6 sm:gap-10 mt-24 sm:mt-32 max-w-3xl">
+        <h2 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight bg-clip-text text-transparent bg-gradient-to-r from-black to-neutral-500 dark:from-white dark:to-neutral-400">
+          Build modern interfaces effortlessly
+        </h2>
+        <p className="text-lg sm:text-xl text-neutral-700 dark:text-neutral-300 max-w-xl">
+          Mast UI is a beautifully designed, developer-first component library
+          built for speed, clarity, and customization.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Button onClick={() => alert('Component Demo')}>
+            Explore Components
+          </Button>
+          <Button onClick={() => alert('Star on GitHub')}>
+            Star on GitHub
+          </Button>
+        </div>
       </main>
+
+      {/* Footer */}
+      <footer className="mt-24 text-xs text-neutral-500 dark:text-neutral-400">
+        © {new Date().getFullYear()} Mast UI. Built with ♥ using Next.js.
+      </footer>
     </div>
   );
 }
