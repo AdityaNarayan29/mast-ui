@@ -9,8 +9,9 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["packages/*"]
-    }
+      "@/*": ["packages/mast-ui/src/*"]
+    },
+    "types": []
   },
   "include": ["packages/**/*"]
 }
