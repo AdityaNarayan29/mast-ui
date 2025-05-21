@@ -1,0 +1,6 @@
+{
+  "name": "@mastui/tailwind-config",
+  "private": true,
+  "type": "module",
+  "main": "tailwind.config.ts"
+}

@@ -8,13 +8,23 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
-    "cpx": "^1.5.0",
+    "@tailwindcss/postcss": "^4.1.7",
+    "@types/node": "^20.17.50",
+    "@types/tailwindcss": "^3.1.0",
+    "autoprefixer": "^10.4.21",
+    "chalk": "^5.4.1",
+    "cpy": "^11.1.0",
+    "postcss": "^8.5.3",
     "prettier": "^3.5.3",
+    "tailwindcss": "^4.1.7",
     "turbo": "^2.5.3",
     "typescript": "5.8.2"
   },
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "pnpm": "^10.11.0"
   }
 }

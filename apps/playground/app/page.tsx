@@ -3,7 +3,7 @@ import { Button } from "mastui";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col justify-center items-center p-10 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
+    <div className="min-h-screen flex flex-col justify-center items-center p-10 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
       <h1 className="text-4xl font-bold mb-6 text-center">
         Welcome to MastUI 🚀
       </h1>
@@ -21,6 +21,7 @@ export default function Home() {
       <Button onClick={() => alert('Clicked!')}>Default Button</Button>
       <Button variant="destructive">Delete</Button>
       <Button variant="ghost" size="sm">Ghost Small</Button>
+      <Button color="red" size="sm">Ghost Small</Button>
     </div>
 
 
@@ -35,6 +36,6 @@ export default function Home() {
           <a href="/storybook" className="text-blue-600 hover:underline">Storybook</a> for examples.
         </p>
       </section>
-    </main>
+    </div>
   );
 }
