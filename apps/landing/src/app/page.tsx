@@ -12,8 +12,8 @@ export default function Home() {
           <Image
             src="/logo.png"
             alt="Mast UI Logo"
-            width={60}
-            height={60}
+            width={50}
+            height={50}
           />
           <h1 className="text-xl md:text-2xl font-bold tracking-tight">Mast UI</h1>
         </div>
