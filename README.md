@@ -15,12 +15,14 @@
 ```
 root/
 ├── apps/
-│   ├── docs/           # Nextra-powered documentation site
-│   └── landing/        # MastUI landing page
+│   ├── docs/                 # Fumadocs-powered documentation site
+│   ├── landing/              # MastUI landing page
+│   └── playground/           # Tests components in environment
 ├── packages/
-│   ├── mastui/         # Component library (ShadCN + Magic UI)
-│   ├── eslint-config/  # Shared ESLint config
-│   └── tsconfig/       # Shared TypeScript config
+│   ├── eslint-config/        # Shared ESLint config
+│   ├── mastui/               # Component library (ShadCN + Magic UI)
+│   ├── tailwind-config/      # Shared Tailwind config
+│   └── typescript-config/    # Shared TypeScript config
 ```
 
 ---
