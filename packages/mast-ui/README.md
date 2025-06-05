@@ -1,84 +1,123 @@
-# Turborepo starter
+# 🌟 MastUI — Build Beautiful Interfaces, Effortlessly
 
-This Turborepo starter is maintained by the Turborepo core team.
+> A modern, **motion-first** UI component library built with **ShadCN UI**, **Magic UI (Framer Motion)**, and **Tailwind CSS**.
+> MastUI empowers developers to craft elegant, fast, and accessible React applications — one component at a time.
 
-## Using this example
+![npm](https://img.shields.io/npm/v/mastui?style=flat-square)
+![license](https://img.shields.io/github/license/yourgithub/mastui?style=flat-square)
+![types](https://img.shields.io/npm/types/mastui?style=flat-square)
+![build](https://img.shields.io/github/actions/workflow/status/yourgithub/mastui/ci.yml?style=flat-square)
 
-Run the following command:
+---
 
-```sh
-npx create-turbo@latest
-```
-
-## What's inside?
-
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
+## 📦 Monorepo Structure (If using monorepo)
 
 ```
-cd my-turborepo
-pnpm build
+root/
+├── apps/
+│   ├── docs/                 # Fumadocs-powered documentation site
+│   ├── landing/              # MastUI landing page
+│   └── playground/           # Tests components in environment
+├── packages/
+│   ├── eslint-config/        # Shared ESLint config
+│   ├── mastui/               # Component library (ShadCN + Magic UI)
+│   ├── tailwind-config/      # Shared Tailwind config
+│   └── typescript-config/    # Shared TypeScript config
 ```
 
-### Develop
+---
 
-To develop all apps and packages, run the following command:
+## ✨ MastUI Highlights
 
+* 🎨 **Variants & Sizes** powered by [`cva`](https://github.com/joe-bell/cva)
+* 🎬 **Fluid Animations** with Magic UI (Framer Motion)
+* ⚡ **Tree-shakable**: Import only what you need
+* 💅 **Dark Mode & Theming** built on Tailwind CSS
+* ✅ **Accessibility** ensured via Radix UI Primitives
+* 🔧 **Composable & Extendable** components
+* 🔥 **Modern DX** with TypeScript, Tailwind, and React
+
+---
+
+## 📦 Installation
+
+Install MastUI components via npm:
+
+```bash
+npm install mastui
 ```
-cd my-turborepo
+
+Also install peer dependencies:
+
+```bash
+npm install tailwindcss framer-motion class-variance-authority tailwind-merge
+```
+
+---
+
+## 🛠 Quick Usage
+
+```tsx
+import { Button } from "mastui";
+
+export default function App() {
+  return (
+    <div className="p-4">
+      <Button variant="default" size="md" animate>
+        Click Me
+      </Button>
+    </div>
+  );
+}
+```
+
+## 🧪 Local Development (For monorepo)
+
+```bash
+pnpm install
 pnpm dev
 ```
 
-### Remote Caching
+Build all packages:
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
+```bash
+pnpm build
 ```
-cd my-turborepo
+
+---
+
+## 🌐 Docs & Playground
+
+* Documentation powered by [Nextra](https://nextra.site) — typically under `/apps/docs`
+* Landing page in Next.js — typically `/apps/landing`
+
+---
+
+## 🔧 Remote Caching with Turborepo + Vercel
+
+Speed up builds with remote caching:
+
+```bash
 npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
 npx turbo link
 ```
 
-## Useful Links
+Learn more: [Turborepo Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
 
-Learn more about the power of Turborepo:
+---
 
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+## 📜 License
+
+MIT License © Made with ❤️ by [Aditya Narayan](https://github.com/adityanarayan29)
+
+---
+
+## 🔗 Useful Links
+
+* [Turborepo Documentation](https://turborepo.com/docs)
+* [ShadCN UI](https://ui.shadcn.com)
+* [Magic UI](https://magicui.design)
+* [Framer Motion](https://www.framer.com/motion/)
+* [Tailwind CSS](https://tailwindcss.com)
+* [Radix UI Primitives](https://www.radix-ui.com/)
+

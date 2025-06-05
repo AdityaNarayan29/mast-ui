@@ -212,6 +212,9 @@ importers:
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
+      cpx:
+        specifier: ^1.5.0
+        version: 1.5.0
       cpy:
         specifier: ^11.1.0
         version: 11.1.0
